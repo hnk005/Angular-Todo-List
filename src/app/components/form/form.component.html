@@ -1,0 +1,12 @@
+<form [formGroup]="todoForm" (ngSubmit)="handleSubmit()">
+  <input
+    autofocus
+    type="text"
+    formControlName="todo"
+    placeholder="Add a new task"
+  />
+  <div>
+    <button type="button" (click)="handleClear()">Clear</button>
+    <button type="submit">Submit</button>
+  </div>
+</form>
